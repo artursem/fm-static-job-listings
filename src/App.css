@@ -1,38 +1,17 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@500;700&family=Zen+Kaku+Gothic+Antique:wght@500;700&display=swap");
+
+:root {
+  --bg: hsl(180, 52%, 96%);
+  --cyan: hsl(180, 31%, 95%);
+  --gray: hsl(180, 8%, 52%);
+  --black: hsl(180, 14%, 20%);
+  --primary: hsl(180, 29%, 50%);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  color: black;
+  background-color: var(--bg);
 }
