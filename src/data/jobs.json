@@ -1,0 +1,49 @@
+{
+	"jobs": [
+		{
+            "id": "j1",
+			"company": "Photosnap",
+            "icon": "photosnap.svg",
+			"new": true,
+			"featured": true,
+			"job": "Full Time",
+			"location": "USA only",
+			"name": "Senior Frontend Developer",
+			"role": "Frontend",
+			"posted": "New!",
+			"level": "Senior",
+			"languages": ["HTML", "CSS", "JavaScript"],
+			"tools": []
+		},
+		{
+            "id": "j2",
+			"company": "Manage",
+            "icon": "manage.svg",
+			"new": true,
+			"featured": true,
+			"job": "Part Time",
+			"location": "Remote",
+			"name": "Fullstack Developer",
+			"role": "Fullstack",
+			"posted": "1d ago",
+			"level": "Midweight",
+			"languages": ["Python"],
+			"tools": ["React"]
+		},
+		{
+            "id": "j3",
+			"company": "Account",
+            "icon": "account.svg",
+			"new": true,
+			"featured": false,
+			"job": "Part Time",
+			"location": "USA only",
+			"name": "Junior Frontend Developer",
+			"role": "Frontend",
+			"posted": "2d ago",
+			"level": "Junior",
+			"languages": ["JavaScript"],
+			"tools": ["React", "Sass"]
+		}
+    ]
+}

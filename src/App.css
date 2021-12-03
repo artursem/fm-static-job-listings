@@ -14,4 +14,17 @@ body {
   font-size: 15px;
   color: black;
   background-color: var(--bg);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.App__header {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background: var(--primary) url('./assets/bg-header-desktop.svg') no-repeat;
 }
