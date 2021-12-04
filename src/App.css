@@ -9,13 +9,14 @@
 
 }
 
-body {
+.App {
   font-family: 'Spartan', sans-serif;
   font-size: 15px;
   color: black;
   background-color: var(--bg);
 
   min-height: 100vh;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -27,4 +28,11 @@ body {
   height: 150px;
   background-size: cover;
   background: var(--primary) url('./assets/bg-header-desktop.svg') no-repeat;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
