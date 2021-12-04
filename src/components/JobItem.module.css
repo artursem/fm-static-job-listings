@@ -51,24 +51,22 @@
 
 .header__capsule {
     display: inline-block;
-    background: var(--primary);
     color: white;
     font-size: 0.5rem;
     text-transform: uppercase;
     padding: 0.6rem 0.4rem 0.4rem 0.4rem;
     border-radius: 15px;
     margin: 0 0.3rem;
+    border: none;
+    transform: translateY(-3px);
 }
 
-.header__featured {
-    display: inline-block;
+.header__capsule.new {
+    background: var(--primary);
+}
+
+.header__capsule.featured {
     background: var(--black);
-    color: white;
-    font-size: 0.5rem;
-    text-transform: uppercase;
-    padding: 0.6rem 0.4rem 0.4rem 0.4rem;
-    border-radius: 15px;
-    margin: 0 0.3rem;
 }
 
 .text__body {

@@ -2,14 +2,17 @@ import React from "react";
 import { jobs } from "../data/jobs.json";
 import JobItem from "./JobItem";
 // import logo from "../assets/loop-studios.svg";
-function JobList() {
+function JobList(props) {
+
+	const handleFilter = (tag) => {
+        console.log('JobItem.js', tag);
+    }
+
 	const jobList = jobs.map((job) => {
 		return (
-			<JobItem content={job} /> 
+			<JobItem content={job} onFilterTag={handleFilter} key={job.id} /> 
 		);
 	});
-
-	console.log(jobs.map((j) => j.name));
 	return <ul>{jobList}</ul>;
 }
 

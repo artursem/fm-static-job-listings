@@ -1,0 +1,18 @@
+.tag {
+	display: inline-block;
+	border: none;
+	border-radius: 5px;
+	padding: 0.6rem;
+	margin: 0.2rem;
+	background: var(--cyan);
+	color: var(--primary);
+	font-weight: bold;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.tag:active,
+.tag:hover {
+	background: var(--primary);
+	color: white;
+}

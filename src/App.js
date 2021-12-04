@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App__header"></header>
-      <JobList/>
+      <JobList />
     </div>
   );
 }

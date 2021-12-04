@@ -1,7 +1,8 @@
 import React from "react";
 import classes from "./JobItem.module.css";
+import TagButton from "./TagButton";
 
-const JobItem = ({ content }) => {
+const JobItem = ({ content, onFilterTag }) => {
 	const itemClasses = content.isFeatured
 		? `${classes.li} ${classes.featured}`
 		: `${classes.li}`;
@@ -13,22 +14,35 @@ const JobItem = ({ content }) => {
 				<div className={classes.main__text}>
 					<div className={classes.text__header}>
 						{content.company}
-						{content.isNew && <span className={`${classes.header__capsule} ${classes.new}`} >New!</span>}
-						{content.isFeatured && <span className={`${classes.header__capsule} ${classes.featured}`} >Featured</span>}
+						{content.isNew && (
+							<span className={`${classes.header__capsule} ${classes.new}`}>
+								New!
+							</span>
+						)}
+						{content.isFeatured && (
+							<span
+								className={`${classes.header__capsule}  ${classes.featured}`}
+							>
+								Featured
+							</span>
+						)}
 					</div>
 					<div className={classes.text__body}>{content.name}</div>
-					<div  className={classes.text__footer}>
-						{content.posted} &nbsp;&middot;&nbsp; 
-						{content.job} &nbsp;&middot;&nbsp; 
+					<div className={classes.text__footer}>
+						{content.posted} &nbsp;&middot;&nbsp;
+						{content.job} &nbsp;&middot;&nbsp;
 						{content.location}
 					</div>
 				</div>
 			</div>
 			<div className={classes.li__tags}>
-				tags
-				{content.role}
-				{content.level}
-				{content.languages.join(", ")},{content.tools.join(", ")}
+				<TagButton tagWord={content.role} onFilterTag={onFilterTag} />
+				<TagButton tagWord={content.level} onFilterTag={onFilterTag} />
+				{[...content.languages, ...content.tools].map((tag) => {
+					return (
+						<TagButton tagWord={tag} key={tag} onFilterTag={onFilterTag} />
+					);
+				})}
 			</div>
 		</li>
 	);
