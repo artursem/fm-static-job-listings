@@ -36,11 +36,11 @@ const JobItem = ({ content, onFilterTag }) => {
 				</div>
 			</div>
 			<div className={classes.li__tags}>
-				<TagButton tagWord={content.role} onFilterTag={onFilterTag} />
-				<TagButton tagWord={content.level} onFilterTag={onFilterTag} />
+				<TagButton tagWord={content.role} />
+				<TagButton tagWord={content.level} />
 				{[...content.languages, ...content.tools].map((tag) => {
 					return (
-						<TagButton tagWord={tag} key={tag} onFilterTag={onFilterTag} />
+						<TagButton tagWord={tag} key={tag} />
 					);
 				})}
 			</div>

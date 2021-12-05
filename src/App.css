@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@500;700&family=Zen+Kaku+Gothic+Antique:wght@500;700&display=swap");
 
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --bg: hsl(180, 52%, 96%);
   --cyan: hsl(180, 31%, 95%);
@@ -20,7 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
 }
 
 .App__header {
@@ -35,4 +41,7 @@ ul {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
