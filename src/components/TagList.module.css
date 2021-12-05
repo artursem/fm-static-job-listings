@@ -1,0 +1,15 @@
+.tagList {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem auto 1rem auto;
+
+    padding: 1rem;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 15px -5px var(--primary);
+    background-color: white;
+
+}
