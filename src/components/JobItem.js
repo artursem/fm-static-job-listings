@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./JobItem.module.css";
 import TagButton from "./TagButton";
 
-const JobItem = ({ content, onFilterTag }) => {
+const JobItem = ({ content }) => {
 	const itemClasses = content.isFeatured
 		? `${classes.li} ${classes.featured}`
 		: `${classes.li}`;
