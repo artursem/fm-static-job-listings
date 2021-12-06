@@ -1,77 +1,82 @@
 .li {
-    list-style: none;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem auto 1rem auto;
+	list-style: none;
+	width: 90%;
+	display: flex;
+	margin: 1rem auto 1rem auto;
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px -5px var(--primary);
+	background-color: white;
+}
 
-    padding: 1rem;
+@media screen and (min-width: 1000px) {
+	.li {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
 
-    border-radius: 5px;
-
-    box-shadow: 0px 0px 15px -5px var(--primary);
-    background-color: white;
-
+@media screen and (max-width: 999px) {
+    .li {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+	}
 }
 
 .featured {
-    border-left: 5px solid var(--primary);
+	border-left: 5px solid var(--primary);
 }
-
-
 
 .li__main {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 .main__logo {
-    margin: 3px;
-    height: 90px;
-    width: 90px;
-
+	margin: 3px;
+	height: 90px;
+	width: 90px;
 }
 .main__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
 }
 .text__header {
-    color: var(--primary);
-    font-weight: bold;
-    font-size: .8rem;
-    display: flex;
-    align-items: center;
+	color: var(--primary);
+	font-weight: bold;
+	font-size: 0.8rem;
+	display: flex;
+	align-items: center;
 }
 
 .header__capsule {
-    display: inline-block;
-    color: white;
-    font-size: 0.5rem;
-    text-transform: uppercase;
-    padding: 0.6rem 0.4rem 0.4rem 0.4rem;
-    border-radius: 15px;
-    margin: 0 0.3rem;
-    border: none;
-    transform: translateY(-3px);
+	display: inline-block;
+	color: white;
+	font-size: 0.5rem;
+	text-transform: uppercase;
+	padding: 0.6rem 0.4rem 0.4rem 0.4rem;
+	border-radius: 15px;
+	margin: 0 0.3rem;
+	border: none;
+	transform: translateY(-3px);
 }
 
 .header__capsule.new {
-    background: var(--primary);
+	background: var(--primary);
 }
 
 .header__capsule.featured {
-    background: var(--black);
+	background: var(--black);
 }
 
 .text__body {
-    font-size: 1.4rem;    
-    font-weight: bold;
+	font-size: 1.4rem;
+	font-weight: bold;
 }
 .text__footer {
-    color: var(--gray);
-    font-size: .8rem
-
+	color: var(--gray);
+	font-size: 0.8rem;
 }
