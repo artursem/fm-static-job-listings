@@ -18,8 +18,10 @@ const tagReducer = (state, action) => {
 
 		case TAG.REMOVE:
 			return state.filter((tag) => tag !== action.value);
+
+		default:
+			return [];
 	}
-	return [];
 };
 
 function ContextProvider(props) {

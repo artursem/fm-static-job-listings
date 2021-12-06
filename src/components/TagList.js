@@ -9,7 +9,7 @@ function TagList() {
 		<TagListItem key={filter}>{filter}</TagListItem>
 	));
 
-	return <div className={classes.tagList}>{list}</div>;
+	return tagCtx.filters.length >0 ? <div className={classes.tagList}>{list}</div> : "";
 }
 
 export default TagList;

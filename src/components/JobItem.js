@@ -1,4 +1,5 @@
 import React from "react";
+import IconAccount from "./icons/IconAccount";
 import classes from "./JobItem.module.css";
 import TagButton from "./TagButton";
 
@@ -10,7 +11,9 @@ const JobItem = ({ content }) => {
 	return (
 		<li key={content.id} className={itemClasses}>
 			<div className={classes.li__main}>
-				<div className={classes.main__logo}>{/* <img src={logo} /> */}</div>
+				<div className={classes.main__logo}>
+					<IconAccount/>
+				</div>
 				<div className={classes.main__text}>
 					<div className={classes.text__header}>
 						{content.company}
