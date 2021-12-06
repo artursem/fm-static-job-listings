@@ -20,9 +20,7 @@
     border-left: 5px solid var(--primary);
 }
 
-.li div {
-    /* border: solid 1px pink; */
-}
+
 
 .li__main {
     display: flex;
@@ -32,8 +30,7 @@
     margin: 3px;
     height: 90px;
     width: 90px;
-    border-radius: 50%;
-    background: cornflowerblue;
+
 }
 .main__text {
     display: flex;

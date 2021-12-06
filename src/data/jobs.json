@@ -3,7 +3,6 @@
 		{
 			"id": "j1",
 			"company": "Photosnap",
-			"icon": "photosnap.svg",
 			"isNew": true,
 			"isFeatured": true,
 			"job": "Full Time",
@@ -18,7 +17,6 @@
 		{
 			"id": "j2",
 			"company": "Manage",
-			"icon": "manage.svg",
 			"isNew": true,
 			"isFeatured": true,
 			"job": "Part Time",
@@ -33,7 +31,6 @@
 		{
 			"id": "j3",
 			"company": "Account",
-			"icon": "IconAccount",
 			"isNew": true,
 			"isFeatured": false,
 			"job": "Part Time",
@@ -48,7 +45,6 @@
 		{
 			"id": "j4",
 			"company": "My Home",
-			"icon": "myhome.svg",
 			"isNew": false,
 			"isFeatured": false,
 			"job": "Contract",
@@ -63,7 +59,6 @@
 		{
 			"id": "j5",
 			"company": "Loop Studios",
-			"icon": "loop-studios.svg",
 			"isNew": false,
 			"isFeatured": false,
 			"job": "Full Time",
@@ -78,7 +73,6 @@
 		{
 			"id": "j6",
 			"company": "FaceIt",
-			"icon": "faceit.svg",
 			"isNew": false,
 			"isFeatured": false,
 			"job": "Full Time",
@@ -93,7 +87,6 @@
 		{
 			"id": "j7",
 			"company": "Shortly",
-			"icon": "shortly.svg",
 			"isNew": false,
 			"isFeatured": false,
 			"job": "Full Time",
@@ -108,7 +101,6 @@
 		{
 			"id": "j8",
 			"company": "Insure",
-			"icon": "insure.svg",
 			"isNew": false,
 			"isFeatured": false,
 			"job": "Full Time",
@@ -123,7 +115,6 @@
 		{
 			"id": "j9",
 			"company": "Eyecam Co.",
-			"icon": "eyecanm-co.svg",
 			"isNew": false,
 			"isFeatured": false,
 			"job": "Full Time",
@@ -138,7 +129,6 @@
 		{
 			"id": "j10",
 			"company": "The Air Filter Company",
-			"icon": "the-air-filter-company.svg",
 			"isNew": false,
 			"isFeatured": false,
 			"job": "Part Time",
